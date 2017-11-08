@@ -1,0 +1,25 @@
+{
+  "name": "aws-kcl-test",
+  "description": "KCL for NodeJs to demo consumer load balancer",
+  "version": "0.7.0",
+  "author": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "bin": {
+    "kcl-bootstrap": "bin/kcl-bootstrap",
+    "kcl-bootstrap.bat": "bin/kcl-bootstrap.bat"
+  },
+  "scripts": {
+    "run_producer": "node producer/sample_kinesis_producer_app.js",
+    "run_consumer1": "APP_NAME=consumer1 bin/kcl-bootstrap --java /usr/bin/java -e -p consumer/sample.properties",
+    "run_consumer2": "APP_NAME=consumer2 bin/kcl-bootstrap --java /usr/bin/java -e -p consumer/sample2.properties"
+  },
+  "dependencies": {
+    "aws-kcl": "^0.7.0",
+    "commander": "~2.6.0",
+    "machina": "~1.0.0-1"
+  },
+  "license": "ISC"
+}
