@@ -18,7 +18,9 @@
   },
   "dependencies": {
     "aws-kcl": "^0.7.0",
+    "aws-sdk": "^2.149.0",
     "commander": "~2.6.0",
+    "log4js": "^0.6.38",
     "machina": "~1.0.0-1"
   },
   "license": "ISC"
